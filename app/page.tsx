@@ -5,6 +5,17 @@ import { ClientLogoSection } from '@/components/ui/client-logo-section';
 export default function Home() {
   return (
     <main className="page-shell">
+      <header className="site-header">
+        <div className="site-header-inner">
+          <a href="#" className="brand-link">Bridge AI</a>
+          <nav className="site-nav" aria-label="Primary navigation">
+            <a href="#features">Features</a>
+            <a href="#contact">Demo</a>
+            <a href="#contact">Contact</a>
+          </nav>
+          <a href="#contact" className="button button-primary header-cta">Book demo</a>
+        </div>
+      </header>
       <section className="hero-section">
         <AuroraBackground className="hero-background px-6 sm:px-10 lg:px-16">
           <div className="relative z-10 flex w-full max-w-5xl flex-col items-center justify-center gap-6 text-center px-4 sm:px-0">
@@ -106,21 +117,78 @@ export default function Home() {
       </section>
 
       <section className="section section-dark" id="contact">
-        <div className="contact-panel">
-          <div>
-            <p className="section-label">Get started</p>
-            <h2>Bring AI-enabled SEN learning to your organization.</h2>
-            <p>Schedule a consultation to explore how Bridge AI can transform therapy, assessment and progress reporting for your team.</p>
+        <div className="contact-form-shell">
+          <div className="contact-form-panel">
+            <div>
+              <p className="section-label">Fill the form. It's easy.</p>
+              <h2>Get in touch with the Bridge AI team.</h2>
+              <p>
+                Tell us about your organisation, SEN goals, and current challenges. Our team will respond with a tailored demo and next-step support.
+              </p>
+            </div>
+            <form className="contact-form" action="#" method="post">
+              <div className="form-row">
+                <label>
+                  First name
+                  <input type="text" name="firstName" placeholder="First name" required />
+                </label>
+                <label>
+                  Last name
+                  <input type="text" name="lastName" placeholder="Last name" required />
+                </label>
+              </div>
+              <label>
+                Email
+                <input type="email" name="email" placeholder="Email" required />
+              </label>
+              <label>
+                Company
+                <input type="text" name="company" placeholder="Company" required />
+              </label>
+              <label>
+                Briefly tell us about your project and your current goals.
+                <textarea name="message" placeholder="How can we help you?" rows={5} required />
+              </label>
+              <button type="submit" className="button button-primary form-submit">
+                Send message
+              </button>
+            </form>
           </div>
-          <div className="contact-actions">
-            <a href="mailto:hello@bridgeai.example" className="button button-primary">Contact our team</a>
-            <a href="#" className="button button-secondary">Download brochure</a>
+          <div className="contact-side-panel">
+            <div className="contact-side-copy">
+              <h3>Request Demo?</h3>
+              <label className="demo-checkbox">
+                <input type="checkbox" name="requestDemo" />
+                <span>Request a demo at our facility</span>
+              </label>
+              <div className="demo-dates">
+                <label>
+                  Preferred Date 1
+                  <input type="date" name="demoDate1" />
+                </label>
+                <label>
+                  Preferred Date 2
+                  <input type="date" name="demoDate2" />
+                </label>
+              </div>
+              <div className="demo-address">
+                <p><strong>Lenovo AI Hub</strong></p>
+                <p>16 Station Lane, Hung Hom</p>
+              </div>
+            </div>
           </div>
         </div>
       </section>
 
       <footer className="footer-bar">
-        <p>Bridge AI • Established 2019 • Intelligent support for special education needs</p>
+        <div className="footer-inner">
+          <p>Bridge AI • Established 2019 • Intelligent support for special education needs</p>
+          <nav className="footer-nav" aria-label="Footer navigation">
+            <a href="#features">Features</a>
+            <a href="#contact">Demo</a>
+            <a href="#contact">Contact</a>
+          </nav>
+        </div>
       </footer>
     </main>
   );
