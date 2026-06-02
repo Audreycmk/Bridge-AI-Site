@@ -1,6 +1,7 @@
 import Image from 'next/image';
 import { AuroraBackground } from '@/components/ui/aurora-background';
 import { ClientLogoSection } from '@/components/ui/client-logo-section';
+import ContactForm from '@/components/contact/ContactForm';
 
 export default function Home() {
   return (
@@ -126,33 +127,7 @@ export default function Home() {
                 Tell us about your organisation, SEN goals, and current challenges. Our team will respond with a tailored demo and next-step support.
               </p>
             </div>
-            <form className="contact-form" action="#" method="post">
-              <div className="form-row">
-                <label>
-                  First name
-                  <input type="text" name="firstName" placeholder="First name" required />
-                </label>
-                <label>
-                  Last name
-                  <input type="text" name="lastName" placeholder="Last name" required />
-                </label>
-              </div>
-              <label>
-                Email
-                <input type="email" name="email" placeholder="Email" required />
-              </label>
-              <label>
-                Company
-                <input type="text" name="company" placeholder="Company" required />
-              </label>
-              <label>
-                Briefly tell us about your project and your current goals.
-                <textarea name="message" placeholder="How can we help you?" rows={5} required />
-              </label>
-              <button type="submit" className="button button-primary form-submit">
-                Send message
-              </button>
-            </form>
+            <ContactForm />
           </div>
           <div className="contact-side-panel">
             <div className="contact-side-copy">
