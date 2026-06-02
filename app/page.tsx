@@ -2,11 +2,12 @@ import Image from 'next/image';
 import { AuroraBackground } from '@/components/ui/aurora-background';
 import { ClientLogoSection } from '@/components/ui/client-logo-section';
 import ContactForm from '@/components/contact/ContactForm';
+import { BlueFooter } from '@/components/footer/BlueFooter';
 
 export default function Home() {
   return (
-    <main className="page-shell">
-      <header className="site-header">
+    <>
+      <header className="site-header glass">
         <div className="site-header-inner">
           <a href="#" className="brand-link">Bridge AI</a>
           <nav className="site-nav" aria-label="Primary navigation">
@@ -17,8 +18,9 @@ export default function Home() {
           <a href="#contact" className="button button-primary header-cta">Book demo</a>
         </div>
       </header>
-      <section className="hero-section">
-        <AuroraBackground className="hero-background px-6 sm:px-10 lg:px-16">
+      <main className="page-shell">
+        <section className="hero-section">
+          <AuroraBackground className="hero-background px-6 sm:px-10 lg:px-16">
           <div className="relative z-10 flex w-full max-w-5xl flex-col items-center justify-center gap-6 text-center px-4 sm:px-0">
             <Image src="/bridge-ai-logo.png" alt="Bridge AI logo" width={200} height={200} className="mb-2" />
             <p className="text-sm uppercase tracking-[0.35em] text-slate-500">Bridge AI</p>
@@ -122,7 +124,7 @@ export default function Home() {
           <div className="contact-form-panel">
             <div>
               <p className="section-label">Fill the form. It's easy.</p>
-              <h2>Get in touch with the Bridge AI team.</h2>
+              <h4 className="text-white">Get in touch with the Bridge AI team.</h4>
               <p>
                 Tell us about your organisation, SEN goals, and current challenges. Our team will respond with a tailored demo and next-step support.
               </p>
@@ -131,11 +133,12 @@ export default function Home() {
           </div>
           <div className="contact-side-panel">
             <div className="contact-side-copy">
-              <h3>Request Demo?</h3>
+              <h4>Request Demo?</h4>
               <label className="demo-checkbox">
                 <input type="checkbox" name="requestDemo" />
-                <span>Request a demo at our facility</span>
+                <span>Request a demo to explore Bridge AI</span>
               </label>
+              <br />
               <div className="demo-dates">
                 <label>
                   Preferred Date 1
@@ -147,7 +150,7 @@ export default function Home() {
                 </label>
               </div>
               <div className="demo-address">
-                <p><strong>Lenovo AI Hub</strong></p>
+                <p><strong>Demo at Lenovo AI Hub</strong></p>
                 <p>16 Station Lane, Hung Hom</p>
               </div>
             </div>
@@ -155,16 +158,10 @@ export default function Home() {
         </div>
       </section>
 
-      <footer className="footer-bar">
-        <div className="footer-inner">
-          <p>Bridge AI • Established 2019 • Intelligent support for special education needs</p>
-          <nav className="footer-nav" aria-label="Footer navigation">
-            <a href="#features">Features</a>
-            <a href="#contact">Demo</a>
-            <a href="#contact">Contact</a>
-          </nav>
-        </div>
-      </footer>
+      <BlueFooter />
     </main>
+    </>
   );
 }
+
+

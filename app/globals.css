@@ -46,6 +46,11 @@ a {
   font: inherit;
 }
 
+h4 {
+  color: #ffffff;
+  font-size: 2rem;
+}
+
 .page-shell {
   width: min(1180px, calc(100% - 2rem));
   margin: 0 auto;
@@ -141,6 +146,7 @@ a {
   color: #0f172a;
 }
 
+
 .hero-card,
 .feature-card,
 .visual-card,
@@ -168,11 +174,19 @@ a {
 
 .site-header {
   position: sticky;
-  top: 0;
+  top: 1rem;
+  left: 0;
+  right: 0;
   z-index: 20;
-  background: rgba(255, 255, 255, 0.95);
-  backdrop-filter: blur(18px);
-  border-bottom: 1px solid rgba(148, 163, 184, 0.15);
+  width: min(100%, 100vw);
+  margin: 0 auto;
+  padding: 1rem 0;
+  background: rgba(255, 255, 255, 0.15);
+  backdrop-filter: blur(20px) saturate(180%);
+  -webkit-backdrop-filter: blur(20px) saturate(180%);
+  border: 1px solid rgba(255, 255, 255, 0.75);
+  border-radius: 2rem;
+  box-shadow: 0 8px 32px rgba(31, 38, 135, 0.2), inset 0 4px 20px rgba(255, 255, 255, 0.3);
 }
 
 .site-header-inner,
@@ -187,10 +201,11 @@ a {
 }
 
 .brand-link {
-  font-size: 1.05rem;
-  font-weight: 800;
-  color: #0f172a;
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #6FBEE9;
   text-decoration: none;
+  text-shadow: #0f172a 0px 1px 2px, #0f172a 0px 2px 4px, #0f172a 0px 4px 8px;
 }
 
 .site-nav,
@@ -737,3 +752,4 @@ a {
     width: 100%;
   }
 }
+
