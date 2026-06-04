@@ -1,0 +1,169 @@
+  1: import Image from 'next/image';
+  2: import { AuroraBackground } from '@/components/ui/aurora-background';
+  3: import { ClientLogoSection } from '@/components/ui/client-logo-section';
+  4: import ContactForm from '@/components/contact/ContactForm';
+  5: export default function Home() {
+  6:   return (
+  7:     <main className="page-shell">
+  8:       <header className="site-header">
+  9:         <div className="site-header-inner">
+ 10:           <a href="#" className="brand-link">Bridge AI</a>
+ 11:           <nav className="site-nav" aria-label="Primary navigation">
+ 12:             <a href="#features">Features</a>
+ 13:             <a href="#contact">Contact</a>
+ 14:           </nav>
+ 15:           <a href="#contact" className="button button-primary header-cta">Book demo</a>
+ 16:         </div>
+ 17:       </header>
+ 18:       <section className="hero-section">
+ 19:         <AuroraBackground className="hero-background px-6 sm:px-10 lg:px-16">
+ 20:           <div className="relative z-10 flex w-full max-w-5xl flex-col items-center justify-center gap-6 text-center px-4 sm:px-0">
+ 21:             <Image src="/bridge-ai-logo.png" alt="Bridge AI logo" width={200} height={200} className="mb-2" />
+ 22:             <p className="text-sm uppercase tracking-[0.35em] text-slate-500">Bridge AI</p>
+ 23:             <h1 className="max-w-4xl text-5xl font-bold tracking-tight text-slate-950 sm:text-6xl md:text-7xl">
+ 24:               Intelligent learning for every SEN classroom.
+ 25:             </h1>
+ 26:             <p className="max-w-2xl text-lg leading-8 text-slate-600 sm:text-xl">
+ 27:               The 3i Learning System combines assessment, therapy planning, emotion monitoring, and progress reporting in one connected platform.
+ 28:             </p>
+ 29:             <div className="flex w-full flex-col items-center gap-4 sm:flex-row sm:justify-center">
+ 30:               <a href="#contact" className="button button-primary px-8 py-4 text-base font-semibold">Request a demo</a>
+ 31:               <a href="#features" className="button button-secondary px-8 py-4 text-base font-semibold">Explore the solution</a>
+ 32:             </div>
+ 33:           </div>
+ 34:         </AuroraBackground>
+ 35:       </section>
+ 36: 
+ 37:       <ClientLogoSection />
+ 38: 
+ 39:       <section id="features" className="section section-dark">
+ 40:         <div className="content-grid">
+ 41:           <div>
+ 42:             <p className="section-label">Why Bridge AI</p>
+ 43:             <h2>Designed for schools, hospitals and NGOs working with SEN learners.</h2>
+ 44:             <p className="section-copy">
+ 45:               The Bridge AI platform combines therapist expertise with machine intelligence to create a cohesive workflow for assessment,
+ 46:               planning, therapy, monitoring and reporting.
+ 47:             </p>
+ 48:           </div>
+ 49:           <div className="feature-list">
+ 50:             <article className="feature-card">
+ 51:               <h3>One-stop intervention suite</h3>
+ 52:               <p>From evaluation to IEPs, therapy sessions and progress reports—all in a single platform.</p>
+ 53:             </article>
+ 54:             <article className="feature-card">
+ 55:               <h3>AI + IoT insights</h3>
+ 56:               <p>AI suggests training targets while environmental sensors help maintain optimal learning conditions.</p>
+ 57:             </article>
+ 58:             <article className="feature-card">
+ 59:               <h3>Cross-disciplinary collaboration</h3>
+ 60:               <p>Supports ABA therapists, occupational therapists, speech therapists, physiotherapists and special educators.</p>
+ 61:             </article>
+ 62:             <article className="feature-card">
+ 63:               <h3>Proven adoption</h3>
+ 64:               <p>Trusted by schools, hospitals and NGOs in Hong Kong for special education and therapeutic programs.</p>
+ 65:             </article>
+ 66:           </div>
+ 67:         </div>
+ 68:       </section>
+ 69: 
+ 70:       <section className="section section-light">
+ 71:         <div className="content-grid">
+ 72:           <div className="case-study-panel">
+ 73:             <p className="section-label">The 3i Learning System</p>
+ 74:             <h2>AI-powered classroom experiences for SEN learners.</h2>
+ 75:             <p>
+ 76:               The 3i Learning System helps therapists select appropriate training goals, monitor student performance,
+ 77:               track emotional state, and generate detailed progress reports automatically.
+ 78:             </p>
+ 79:             <div className="case-study-metrics">
+ 80:               <div>
+ 81:                 <strong>1</strong>
+ 82:                 <span>Unified therapy platform</span>
+ 83:               </div>
+ 84:               <div>
+ 85:                 <strong>100%</strong>
+ 86:                 <span>Multi-professional workflow coverage</span>
+ 87:               </div>
+ 88:               <div>
+ 89:                 <strong>Lenovo</strong>
+ 90:                 <span>AI Hub partnership for intelligent learning spaces</span>
+ 91:               </div>
+ 92:             </div>
+ 93:           </div>
+ 94:           <div className="visual-grid">
+ 95:             <div className="visual-card">
+ 96:               <h3>Assessment</h3>
+ 97:               <p>Smart evaluation tools with AI recommendations for individualized learning plans.</p>
+ 98:             </div>
+ 99:             <div className="visual-card">
+100:               <h3>Therapy</h3>
+101:               <p>Guided session delivery for ABA, OT, speech and physiotherapy.</p>
+102:             </div>
+103:             <div className="visual-card">
+104:               <h3>Monitoring</h3>
+105:               <p>Emotion and environment analytics help sustain an optimal learning space.</p>
+106:             </div>
+107:           </div>
+108:         </div>
+109:       </section>
+110: 
+111:       <section className="section section-quote">
+112:         <div className="quote-panel">
+113:           <p>Bridge AI makes SEN education more accessible, efficient, and future-ready by combining compassion with intelligent technology.</p>
+114:           <span>— Bridge AI</span>
+115:         </div>
+116:       </section>
+117: 
+118:       <section className="section section-dark" id="contact">
+119:         <div className="contact-form-shell">
+120:           <div className="contact-form-panel">
+121:             <div>
+122:               <p className="section-label">Fill the form. It's easy.</p>
+123:               <h4 className="text-white">Get in touch with the Bridge AI team.</h4>
+124:               <p>
+125:                 Tell us about your organisation, SEN goals, and current challenges. Our team will respond with a tailored demo and next-step support.
+126:               </p>
+127:             </div>
+128:             <ContactForm />
+129:           </div>
+130:           <div className="contact-side-panel">
+131:             <div className="contact-side-copy">
+132:               <h4>Request Demo?</h4>
+133:               <label className="demo-checkbox">
+134:                 <input type="checkbox" name="requestDemo" />
+135:                 <span>Request a demo to explore Bridge AI</span>
+136:               </label>
+137:               <br />
+138:               <div className="demo-dates">
+139:                 <label>
+140:                   Preferred Date 1
+141:                   <input type="date" name="demoDate1" />
+142:                 </label>
+143:                 <label>
+144:                   Preferred Date 2
+145:                   <input type="date" name="demoDate2" />
+146:                 </label>
+147:               </div>
+148:               <div className="demo-address">
+149:                 <p><strong>Demo at Lenovo AI Hub</strong></p>
+150:                 <p>16 Station Lane, Hung Hom</p>
+151:               </div>
+152:             </div>
+153:           </div>
+154:         </div>
+155:       </section>
+156: 
+157:       <footer className="footer-bar">
+158:         <div className="footer-inner">
+159:           <p>Bridge AI • Established 2019 • Intelligent support for special education needs</p>
+160:           <nav className="footer-nav" aria-label="Footer navigation">
+161:             <a href="#features">Features</a>
+162:             <a href="#contact">Demo</a>
+163:             <a href="#contact">Contact</a>
+164:           </nav>
+165:         </div>
+166:       </footer>
+167:     </main>
+168:   );
+169: }

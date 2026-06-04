@@ -2,25 +2,15 @@ import Image from 'next/image';
 import { AuroraBackground } from '@/components/ui/aurora-background';
 import { ClientLogoSection } from '@/components/ui/client-logo-section';
 import ContactForm from '@/components/contact/ContactForm';
+import SiteHeader from '@/components/header/SiteHeader';
 import { BlueFooter } from '@/components/footer/BlueFooter';
 
 export default function Home() {
   return (
-    <>
-      <header className="site-header glass">
-        <div className="site-header-inner">
-          <a href="#" className="brand-link">Bridge AI</a>
-          <nav className="site-nav" aria-label="Primary navigation">
-            <a href="#features">Features</a>
-            <a href="#contact">Demo</a>
-            <a href="#contact">Contact</a>
-          </nav>
-          <a href="#contact" className="button button-primary header-cta">Book demo</a>
-        </div>
-      </header>
-      <main className="page-shell">
-        <section className="hero-section">
-          <AuroraBackground className="hero-background px-6 sm:px-10 lg:px-16">
+    <main className="page-shell">
+      <SiteHeader />
+      <section className="hero-section">
+        <AuroraBackground className="hero-background px-6 sm:px-10 lg:px-16">
           <div className="relative z-10 flex w-full max-w-5xl flex-col items-center justify-center gap-6 text-center px-4 sm:px-0">
             <Image src="/bridge-ai-logo.png" alt="Bridge AI logo" width={200} height={200} className="mb-2" />
             <p className="text-sm uppercase tracking-[0.35em] text-slate-500">Bridge AI</p>
@@ -157,11 +147,18 @@ export default function Home() {
           </div>
         </div>
       </section>
-
+{/* 
+      <footer className="footer-bar">
+        <div className="footer-inner">
+          <p>Bridge AI • Established 2019 • Intelligent support for special education needs</p>
+          <nav className="footer-nav" aria-label="Footer navigation">
+            <a href="#features">Features</a>
+            <a href="#contact">Demo</a>
+            <a href="#contact">Contact</a>
+          </nav>
+        </div>
+      </footer> */}
       <BlueFooter />
     </main>
-    </>
   );
 }
-
-

@@ -1,0 +1,28 @@
+﻿
+> bridge-ai-site@0.1.0 build
+> next build
+
+   Γû▓ Next.js 15.4.11
+   - Environments: .env.local
+
+   Creating an optimized production build ...
+ Γ£ô Compiled successfully in 69s
+   Linting and checking validity of types ...
+   Collecting page data ...
+node.exe : 
+At line:1 char:1
++ & "C:\Program Files\nodejs/node.exe" "C:\Program Files\nodejs/node_mo ...
++ ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: (:String) [], RemoteException
+    + FullyQualifiedErrorId : NativeCommandError
+ 
+> Build error occurred
+[Error: ENOENT: no such file or directory, open 
+'C:\Users\Supervisor\Desktop\Bridge-AI-Site\.next\server\pages-manifest.json'] 
+{
+  errno: -4058,
+  code: 'ENOENT',
+  syscall: 'open',
+  path: 'C:\\Users\\Supervisor\\Desktop\\Bridge-AI-Site\\.next\\server\\pages-m
+anifest.json'
+}

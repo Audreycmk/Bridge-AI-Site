@@ -1,6 +1,6 @@
 export function BlueFooter() {
   return (
-    <footer className="relative overflow-hidden bg-gradient-to-br from-slate-900 via-sky-700 to-sky-900 text-white">
+    <footer className="w-full relative overflow-hidden bg-gradient-to-br from-slate-900 via-sky-700 to-sky-900 text-white">
       <div className="absolute inset-x-0 -top-20 h-36 overflow-hidden">
         <svg className="absolute inset-0 h-full w-full" viewBox="0 0 1440 320" preserveAspectRatio="none">
           <path
