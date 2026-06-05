@@ -11,7 +11,7 @@ export default function Home() {
       <SiteHeader />
       <section className="hero-section">
         <AuroraBackground className="hero-background px-6 sm:px-10 lg:px-16">
-          <div className="relative z-10 flex w-full max-w-5xl flex-col items-center justify-center gap-6 text-center px-4 sm:px-0">
+          <div className="relative z-10 flex w-full max-w-5xl flex-col items-center justify-center gap-6 text-center px-4 sm:px-0 mt-[83px]">
             <Image src="/bridge-ai-logo.png" alt="Bridge AI logo" width={200} height={200} className="mb-2" />
             <p className="text-sm uppercase tracking-[0.35em] text-slate-500">Bridge AI</p>
             <h1 className="max-w-4xl text-5xl font-bold tracking-tight text-slate-950 sm:text-6xl md:text-7xl">
