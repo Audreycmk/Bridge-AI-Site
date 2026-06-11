@@ -44,15 +44,22 @@ export default function SiteHeader() {
         .mobile-menu-panel {
           position: fixed;
           top: 0;
-          right: -100%;
+          right: 0;
           width: 300px;
           height: 100%;
           background: white;
           z-index: 1001;
-          transition: right 0.3s ease;
           box-shadow: -10px 0 30px rgba(0,0,0,0.1);
+          
+          /* CRITICAL SLIDE EFFECT: Starts completely hidden off-screen to the right */
+          transform: translateX(-100%);
+          transition: transform 0.4s cubic-bezier(0.16, 1, 0.3, 1);
         }
-        .mobile-menu-panel.open { right: 0; }
+        
+        /* Slides perfectly into view when open class is applied */
+        .mobile-menu-panel.open { 
+          transform: translateX(0); 
+        }
         
         .mobile-menu-backdrop {
           position: fixed;
