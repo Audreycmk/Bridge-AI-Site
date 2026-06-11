@@ -44,7 +44,7 @@ export default function ContactForm() {
       {/* --- REQUEST DEMO SECTION ABOVE WITH ORIGINAL CLASSES --- */}
       <div className="contact-side-panel bg-slate-50 dark:bg-zinc-900 p-6 rounded-2xl border border-slate-100 dark:border-zinc-800 w-full transition-all duration-300">
         <div className="contact-side-copy">
-          <h4 className="text-xl font-bold tracking-tight mb-3 text-slate-900 dark:text-white">Discover Bridge AI with a live demo</h4>
+          <h4 className="text-xl tracking-wide mb-5 text-slate-900 dark:text-white">Discover Bridge AI with a Live Demo</h4>
           
           <label className="demo-checkbox flex items-center gap-4 cursor-pointer select-none mb-4">
             <input 
@@ -119,36 +119,35 @@ export default function ContactForm() {
 
       {/* --- STANDARD REGISTRATION FIELDS BELOW --- */}
       <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
-        <label className="flex flex-col gap-1 text-sm font-medium text-slate-700 dark:text-slate-300">
-          First name
-          <input name="firstName" type="text" placeholder="First name" className="p-3 border border-slate-200 dark:border-zinc-800 rounded-xl bg-white dark:bg-zinc-950 focus:ring-2 focus:ring-indigo-500 outline-none" required />
-        </label>
-        <label className="flex flex-col gap-1 text-sm font-medium text-slate-700 dark:text-slate-300">
-          Last name
-          <input name="lastName" type="text" placeholder="Last name" className="p-3 border border-slate-200 dark:border-zinc-800 rounded-xl bg-white dark:bg-zinc-950 focus:ring-2 focus:ring-indigo-500 outline-none" required />
-        </label>
-      </div>
+  <label className="flex flex-col gap-1 text-sm font-medium text-white">
+    First name
+    <input name="firstName" type="text" placeholder="First name" className="p-3 border border-slate-200 dark:border-zinc-800 rounded-xl bg-white dark:bg-zinc-950 text-slate-900 dark:text-white focus:ring-2 focus:ring-indigo-500 outline-none" required />
+  </label>
+  <label className="flex flex-col gap-1 text-sm font-medium text-white">
+    Last name
+    <input name="lastName" type="text" placeholder="Last name" className="p-3 border border-slate-200 dark:border-zinc-800 rounded-xl bg-white dark:bg-zinc-950 text-slate-900 dark:text-white focus:ring-2 focus:ring-indigo-500 outline-none" required />
+  </label>
+</div>
 
-      <label className="flex flex-col gap-1 text-sm font-medium text-slate-700 dark:text-slate-300">
-        Email
-        <input name="email" type="email" placeholder="Email" className="p-3 border border-slate-200 dark:border-zinc-800 rounded-xl bg-white dark:bg-zinc-950 focus:ring-2 focus:ring-indigo-500 outline-none" required />
-      </label>
+<label className="flex flex-col gap-1 text-sm font-medium text-white">
+  Email
+  <input name="email" type="email" placeholder="Email" className="p-3 border border-slate-200 dark:border-zinc-800 rounded-xl bg-white dark:bg-zinc-950 text-slate-900 dark:text-white focus:ring-2 focus:ring-indigo-500 outline-none" required />
+</label>
 
-      <label className="flex flex-col gap-1 text-sm font-medium text-slate-700 dark:text-slate-300">
-        Company
-        <input name="company" type="text" placeholder="Company" className="p-3 border border-slate-200 dark:border-zinc-800 rounded-xl bg-white dark:bg-zinc-950 focus:ring-2 focus:ring-indigo-500 outline-none" required />
-      </label>
+<label className="flex flex-col gap-1 text-sm font-medium text-white">
+  Company
+  <input name="company" type="text" placeholder="Company" className="p-3 border border-slate-200 dark:border-zinc-800 rounded-xl bg-white dark:bg-zinc-950 text-slate-900 dark:text-white focus:ring-2 focus:ring-indigo-500 outline-none" required />
+</label>
 
-      <label className="flex flex-col gap-1 text-sm font-medium text-slate-700 dark:text-slate-300">
-        Message
-        <textarea name="message" placeholder="How can we help you?" rows={4} className="p-3 border border-slate-200 dark:border-zinc-800 rounded-xl bg-white dark:bg-zinc-950 focus:ring-2 focus:ring-indigo-500 outline-none" required />
-      </label>
-
+<label className="flex flex-col gap-1 text-sm font-medium text-white">
+  Message
+  <textarea name="message" placeholder="How can we help you?" rows={4} className="p-3 border border-slate-200 dark:border-zinc-800 rounded-xl bg-white dark:bg-zinc-950 text-slate-900 dark:text-white focus:ring-2 focus:ring-indigo-500 outline-none" required />
+</label>
       {/* --- DYNAMIC ACTION SUBMISSION KEYED TO SELECTION STATE --- */}
       <div className="flex flex-col sm:flex-row gap-4 items-center mt-2">
         <button 
           type="submit" 
-          className="w-full sm:w-auto bg-indigo-600 text-white px-8 py-3.5 rounded-xl font-semibold hover:bg-indigo-700 transition shadow-md hover:shadow-indigo-500/10 disabled:opacity-50" 
+          className="w-full sm:w-auto bg-[#6fbee9] text-grey px-8 py-3.5 rounded-xl font-semibold hover:bg-[#5997b9] transition shadow-md hover:shadow-indigo-500/10 disabled:opacity-50" 
           disabled={loading}
         >
           {loading ? "Sending…" : requestDemo ? "Request Demo" : "Send message"}

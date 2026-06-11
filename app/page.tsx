@@ -110,19 +110,19 @@ export default function Home() {
         </div>
       </section>
 
-      <section className="section section-dark" id="contact">
-        <div className="contact-form-shell">
-          <div className="contact-form-panel">
+      <section className="contact-form-shell" id="contact">
+        {/* <div className="contact-form-shell"> */}
+          <div className="contact-form-panel w-full">
             <div>
               <p className="section-label">Fill the form. It's easy.</p>
               <h4 className="text-white ">Get in touch with the Bridge AI.</h4>
-              <p className="m-4">
+              <p className="my-4 text-slate-400">
                 Tell us about your organisation, SEN goals, and current challenges. Our team will respond with a next-step support.
               </p> <br />
             </div>
         
             <ContactForm />
-          </div>
+          {/* </div> */}
           {/* <div className="contact-side-panel">
             <div className="contact-side-copy">
               <h4>Request Demo?</h4>
