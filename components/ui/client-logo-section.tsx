@@ -62,6 +62,7 @@ export function ClientLogoSection() {
                 </div>
               ))}
             </InfiniteSlider>
+        
 
             {/* Edge Blurring */}
             <ProgressiveBlur
