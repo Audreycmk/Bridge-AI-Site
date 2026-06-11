@@ -11,7 +11,7 @@ export default function Home() {
       <SiteHeader />
       <section className="hero-section">
       
-        <AuroraBackground className="hero-background min-h-screen mb-16 px-6 sm:px-10 lg:px-16">
+        <AuroraBackground className="hero-background min-h-screen px-6 sm:px-10 lg:px-16">
           <div className="relative z-10 flex w-full max-w-5xl flex-col items-center justify-center gap-6 text-center px-4 sm:px-0 mt-[83px]">
             <Image src="/bridge-ai-logo.png" alt="Bridge AI logo" width={200} height={200} className="mb-2" />
             <p className="text-sm uppercase tracking-[0.35em] text-slate-500">Bridge AI</p>
@@ -115,14 +115,15 @@ export default function Home() {
           <div className="contact-form-panel">
             <div>
               <p className="section-label">Fill the form. It's easy.</p>
-              <h4 className="text-white">Get in touch with the Bridge AI team.</h4>
-              <p>
-                Tell us about your organisation, SEN goals, and current challenges. Our team will respond with a tailored demo and next-step support.
-              </p>
+              <h4 className="text-white ">Get in touch with the Bridge AI.</h4>
+              <p className="m-4">
+                Tell us about your organisation, SEN goals, and current challenges. Our team will respond with a next-step support.
+              </p> <br />
             </div>
+        
             <ContactForm />
           </div>
-          <div className="contact-side-panel">
+          {/* <div className="contact-side-panel">
             <div className="contact-side-copy">
               <h4>Request Demo?</h4>
               <label className="demo-checkbox">
@@ -145,7 +146,7 @@ export default function Home() {
                 <p>16 Station Lane, Hung Hom</p>
               </div>
             </div>
-          </div>
+          </div> */}
         </div>
       </section>
 {/* 
