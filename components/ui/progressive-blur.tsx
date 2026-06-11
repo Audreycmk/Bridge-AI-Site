@@ -27,7 +27,11 @@ export function ProgressiveBlur({
   const segmentSize = 1 / (blurLayers + 1);
 
   return (
-    <div className={cn('relative', className)}>
+    /* 
+      FIX: Added background colors that match your site's section theme.
+      This ensures the mask reveals a white/zinc surface instead of an empty abyss.
+    */
+    <div className={cn('relative bg-white/40 dark:bg-zinc-950/40', className)}>
       {Array.from({ length: layers }).map((_, index) => {
         const angle = GRADIENT_ANGLES[direction];
         const gradientStops = [

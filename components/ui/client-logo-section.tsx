@@ -21,8 +21,11 @@ export function ClientLogoSection() {
   const { theme } = useTheme()
 
   return (
-    <section className="py-24 px-4 overflow-hidden bg-slate-50 dark:bg-zinc-950">
-      <div className="relative mx-auto max-w-6xl rounded-[3rem] border border-slate-200 dark:border-zinc-800 bg-white/50 dark:bg-zinc-900/50 py-16 px-8 shadow-2xl backdrop-blur-md">
+    // <section className="py-24 px-4 overflow-hidden bg-slate-50 dark:bg-zinc-950">
+    <section className="py-24 px-4 overflow-hidden ">
+      {/* <div className="relative mx-auto max-w-6xl rounded-[3rem] border border-slate-200 dark:border-zinc-800 bg-white/50 dark:bg-zinc-900/50 py-16 px-8 shadow-2xl backdrop-blur-md"> */}
+       
+<div className="flex items-center justify-center w-full opacity-90 hover:opacity-100 transition-all duration-300">
         
         {/* Background Sparkles */}
         <Sparkles
@@ -38,7 +41,7 @@ export function ClientLogoSection() {
             <p className="text-sm font-bold uppercase tracking-widest text-indigo-600 dark:text-indigo-400">
               Trusted across sectors
             </p>
-            <h2 className="text-3xl font-bold text-slate-900 dark:text-white sm:text-5xl tracking-tight">
+            <h2 className="text-2xl xs:text-3xl sm:text-4xl md:text-5xl font-bold text-slate-900 dark:text-white tracking-tight leading-tight">
               Trusted by leading organizations.
             </h2>
           </div>
@@ -47,7 +50,8 @@ export function ClientLogoSection() {
           <div className="relative h-24 w-full">
             <InfiniteSlider duration={40} gap={60} className="flex items-center">
               {clientLogos.map((logo) => (
-                <div key={logo.id} className="flex items-center justify-center grayscale w-[160px] opacity-70 hover:grayscale-0 hover:opacity-100 transition-all duration-300">
+                // <div key={logo.id} className="flex items-center justify-center grayscale w-[160px] opacity-70 hover:grayscale-0 hover:opacity-100 transition-all duration-300">
+                <div key={logo.id} className="flex items-center justify-center w-[160px] opacity-100 hover:opacity-100 transition-all duration-300">
                   <Image
                     src={logo.src}
                     alt={logo.alt}
