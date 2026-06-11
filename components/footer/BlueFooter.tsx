@@ -1,70 +1,84 @@
+"use client";
+import { AuroraBackground } from "@/components/ui/aurora-background";
+
 export function BlueFooter() {
   return (
-    <footer className="w-full relative overflow-hidden bg-gradient-to-br from-slate-900 via-sky-700 to-sky-900 text-white">
-      <div className="absolute inset-x-0 -top-20 h-36 overflow-hidden">
+    <AuroraBackground className="w-screen relative left-1/2 right-1/2 -ml-[50vw] -mr-[50vw] overflow-hidden bg-gradient-to-br from-slate-900 via-sky-800 to-sky-950 text-white min-h-[400px] py-16 px-8 flex items-center justify-center">
+      
+      {/* Wave Decorative Overlay */}
+      {/* <div className="absolute inset-x-0 -top-20 h-36 overflow-hidden pointer-events-none z-10">
         <svg className="absolute inset-0 h-full w-full" viewBox="0 0 1440 320" preserveAspectRatio="none">
           <path
-            fill="rgba(255,255,255,0.18)"
-            d="M0,128L48,144C96,160,192,192,288,208C384,224,480,224,576,192C672,160,768,96,864,80C960,64,1056,96,1152,122.7C1248,149,1344,171,1392,181.3L1440,192L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"
-          />
-          <path
-            fill="rgba(255,255,255,0.12)"
-            d="M0,192L48,186.7C96,181,192,171,288,176C384,181,480,203,576,197.3C672,192,768,160,864,138.7C960,117,1056,107,1152,117.3C1248,128,1344,160,1392,176L1440,192L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"
-          />
-          <path
             fill="rgba(255,255,255,0.08)"
-            d="M0,256L48,245.3C96,235,192,213,288,192C384,171,480,149,576,138.7C672,128,768,128,864,138.7C960,149,1056,171,1152,186.7C1248,203,1344,213,1392,218.7L1440,224L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"
+            d="M0,128L48,144C96,160,192,192,288,208C384,224,480,224,576,192C672,160,768,96,864,80C960,64,1056,96,1152,122.7C1248,149,1344,171,1392,181.3L1440,192L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,532,320L0,320Z"
           />
         </svg>
-      </div>
+      </div> */}
+<div className="absolute top-0 inset-x-0 h-24 bg-gradient-to-b from-white via-white/40 to-transparent dark:from-zinc-950 dark:via-zinc-950/40 pointer-events-none z-30 backdrop-blur-[4px] [mask-image:linear-gradient(to_bottom,rgba(0,0,0,1),rgba(0,0,0,0))]" />
 
-      <div className="relative mx-auto flex max-w-6xl flex-col items-center px-6 py-24 text-center">
-        <div className="mb-10 flex flex-wrap items-center justify-center gap-6">
-          <a
-            href="https://www.facebook.com/bridgeaihk"
-            target="_blank"
-            rel="noreferrer"
-            className="inline-flex h-12 w-12 items-center justify-center rounded-full border border-white/20 bg-white/5 text-white transition hover:bg-white/10"
-            aria-label="Facebook"
-          >
-            <svg viewBox="0 0 24 24" className="h-5 w-5" fill="currentColor" aria-hidden="true">
-              <path d="M22 12a10 10 0 10-11.5 9.9v-7H8v-3h2.5V9.3c0-2.5 1.5-3.9 3.8-3.9 1.1 0 2.2.2 2.2.2v2.4h-1.2c-1.2 0-1.6.8-1.6 1.6v1.9H17l-.4 3h-2.2v7A10 10 0 0022 12z" />
-            </svg>
-          </a>
-          <a
-            href="https://hk.linkedin.com/company/bridgeai"
-            target="_blank"
-            rel="noreferrer"
-            className="inline-flex h-12 w-12 items-center justify-center rounded-full border border-white/20 bg-white/5 text-white transition hover:bg-white/10"
-            aria-label="LinkedIn"
-          >
-            <svg viewBox="0 0 24 24" className="h-5 w-5" fill="currentColor" aria-hidden="true">
-              <path d="M4.98 3.5a2.5 2.5 0 110 5 2.5 2.5 0 010-5zM2 21h6V9H2v12zm7-12h5.5v1.7h.1c.8-1.4 2.7-2.8 5.6-2.8 6 0 7.1 4 7.1 9.1V21h-6v-8c0-1.9 0-4.4-2.7-4.4-2.7 0-3.2 2.2-3.2 4.3V21H9V9z" />
-            </svg>
-          </a>
-          <a
-            href="https://www.instagram.com/bridge_ai_hk"
-            target="_blank"
-            rel="noreferrer"
-            className="inline-flex h-12 w-12 items-center justify-center rounded-full border border-white/20 bg-white/5 text-white transition hover:bg-white/10"
-            aria-label="Instagram"
-          >
-            <svg viewBox="0 0 24 24" className="h-5 w-5" fill="currentColor" aria-hidden="true">
-              <path d="M7 2C4.24 2 2 4.24 2 7v10c0 2.76 2.24 5 5 5h10c2.76 0 5-2.24 5-5V7c0-2.76-2.24-5-5-5H7zm0 2h10c1.66 0 3 1.34 3 3v10c0 1.66-1.34 3-3 3H7c-1.66 0-3-1.34-3-3V7c0-1.66 1.34-3 3-3zm8 1.5a1 1 0 110 2 1 1 0 010-2zm-5 1A5 5 0 007 6.5a5 5 0 00-5 5c0 2.76 2.24 5 5 5s5-2.24 5-5a5 5 0 00-5-5zm0 2a3 3 0 110 6 3 3 0 010-6z" />
-            </svg>
-          </a>
+      {/* --- MAIN FOOTER WRAPPER CONTAINING AURORA ANIMATION --- */}
+      {/* Footer Content Wrapper */}
+      
+      <div className="relative z-20 max-w-6xl w-full flex flex-col md:flex-row items-center justify-between gap-8 text-center md:text-left">
+        <div>
+           {/* <Image src="/bridge-ai-logo.png" alt="Bridge AI logo" width={40} height={40} className="mb-2" /> */}
+          <h3 className="text-3xl font-bold tracking-wide mb-8">Bridge AI</h3>
+          <p className="text-xs text-slate-300 max-w-md tracking-wider">
+            ©2026 Bridge AI Limited | All Rights Reserved
+          </p>
         </div>
 
-        <div className="mb-12 flex flex-wrap justify-center gap-8 text-sm font-medium uppercase tracking-[0.22em] text-white/80">
-          <a href="#" className="transition hover:text-white">Home</a>
-          <a href="#features" className="transition hover:text-white">Features</a>
-          <a href="#contact" className="transition hover:text-white">Contact</a>
-        </div>
+        {/* Navigation & Social Row */}
+        <div className="flex flex-col items-center md:items-end gap-6">
+          <nav className="flex gap-6 text-sm font-medium text-slate-200" aria-label="Footer navigation">
+            <a href="#features" className="hover:text-white transition tracking-widest">FEATURES</a>
+            <a href="#contact" className="hover:text-white transition tracking-widest">DEMO</a>
+            <a href="#contact" className="hover:text-white transition tracking-widest">CONTACT</a>
+          </nav>
 
-        <p className="max-w-2xl text-center text-sm text-white/60">
-          ©2026 Bridge AI Limited | All Rights Reserved
-        </p>
+          {/* Social Links Container */}
+          <div className="flex gap-4">
+            {/* NEWLY ADDED: Facebook Icon */}
+            <a
+              href="https://www.facebook.com/bridgeai" 
+              target="_blank"
+              rel="noreferrer"
+              className="inline-flex h-12 w-12 items-center justify-center rounded-full border border-white/20 bg-white/5 text-white transition hover:bg-white/20 hover:scale-105 shadow-sm"
+              aria-label="Facebook"
+            >
+              <svg viewBox="0 0 24 24" className="h-5 w-5" fill="currentColor" aria-hidden="true">
+                <path d="M22 12c0-5.52-4.48-10-10-10S2 6.48 2 12c0 4.84 3.44 8.87 8 9.8V15H8v-3h2V9.5C10 7.57 11.57 6 13.5 6H16v3h-2c-.55 0-1 .45-1 1V12h3v3h-3v6.8c4.56-.93 8-4.96 8-9.8z" />
+              </svg>
+            </a>
+
+            {/* LinkedIn Icon */}
+            <a
+              href="https://www.linkedin.com"
+              target="_blank"
+              rel="noreferrer"
+              className="inline-flex h-12 w-12 items-center justify-center rounded-full border border-white/20 bg-white/5 text-white transition hover:bg-white/20 hover:scale-105 shadow-sm"
+              aria-label="LinkedIn"
+            >
+              <svg viewBox="0 0 24 24" className="h-5 w-5" fill="currentColor" aria-hidden="true">
+                <path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z" />
+              </svg>
+            </a>
+
+            {/* Instagram Icon */}
+            <a
+              href="https://www.instagram.com/bridge_ai_hk"
+              target="_blank"
+              rel="noreferrer"
+              className="inline-flex h-12 w-12 items-center justify-center rounded-full border border-white/20 bg-white/5 text-white transition hover:bg-white/20 hover:scale-105 shadow-sm"
+              aria-label="Instagram"
+            >
+              <svg viewBox="0 0 24 24" className="h-5 w-5" fill="currentColor" aria-hidden="true">
+                <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.051.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 100 12.324 6.162 6.162 0 000-12.324zM12 16a4 4 0 110-8 4 4 0 010 8zm6.406-11.845a1.44 1.44 0 100 2.881 1.44 1.44 0 000-2.881z" />
+              </svg>
+            </a>
+          </div>
+        </div>
       </div>
-    </footer>
+    </AuroraBackground> 
   );
 }

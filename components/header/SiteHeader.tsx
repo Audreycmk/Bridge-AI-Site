@@ -29,6 +29,7 @@ export default function SiteHeader() {
           background-color: rgba(255, 255, 255, 0.4);
           backdrop-filter: blur(15px) brightness(1.1);
           -webkit-backdrop-filter: blur(15px) brightness(1.1);
+          --border-radius-2xl
           border-bottom: 1px solid rgba(0, 0, 0, 0.05);
         }
 
@@ -71,9 +72,9 @@ export default function SiteHeader() {
         .mobile-menu-backdrop.open { display: block; }
       `}} />
 
-      <header className="glass-header h-20 flex items-center justify-between px-8">
+      <header className="glass-header h-20 flex items-center justify-between px-8 " >
         {/* Left: Brand */}
-        <Link href="/" className="font-bold text-xl tracking-tighter">
+        <Link href="/" className="font-bold text-xl tracking-wide">
           Bridge AI
         </Link>
 
