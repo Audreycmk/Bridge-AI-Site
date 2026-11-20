@@ -13,8 +13,6 @@ const clientLogos = [
   { id: 'IMDA', src: '/client_logo/logo_IMDA.png', alt: 'Infocomm Media Development Authority' },
   { id: 'NCSS', src: '/client_logo/logo_NCSS.jpg', alt: 'National Council of Social Service' },
   { id: 'PYNEH', src: '/client_logo/logo_PYNEH.png', alt: 'Pamela Youde Nethersole Eastern Hospital' },
-  { id: 'SKH', src: '/client_logo/logo_SKH.png', alt: 'Hong Kong Sheng Kung Hui' },
-  { id: 'SKH2', src: '/client_logo/logo_SKH2.png', alt: 'Hong Kong Sheng Kung Hui logo' },
 ]
 
 export function ClientLogoSection() {
